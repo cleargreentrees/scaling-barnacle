@@ -9,9 +9,6 @@ const client = new Client({ intents: ["Guilds"]});
 client.login(process.env.token);
 console.log("bot is online")
 
-// set api url for the bot
-const api = process.env.api
-
 // Initializing the slash command handler
 client.SlashCommands = new SlashCommandHandler(client);
 
